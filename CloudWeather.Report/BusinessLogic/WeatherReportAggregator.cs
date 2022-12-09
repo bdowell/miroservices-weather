@@ -36,7 +36,7 @@ namespace CloudWeather.Report.BusinessLogic
             _db = db;
         }
 
-        public async Task<WeatherReport> BuildWeeklyReport(string zip, int days)
+        public async Task<WeatherReport> BuildReport(string zip, int days)
         {
             var httpClient = _http.CreateClient();
 
